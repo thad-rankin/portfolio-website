@@ -17,126 +17,242 @@
 </head>
 
 <body>
-  <header class="homepage-hero">
-      <div class="content-wrapper">
-          <h1>Thad Rankin</h1>
-
-          <nav>
-              <ul>
-                  <li><a href="#">home</a></li>
-                  <li><a href="#about">about</a></li>
-                  <li><a href="#skills">skills</a></li>
-                  <li><a href="#contact">contact</a></li>
-                  <li><a href="projects\index.html">projects</a></li>
-              </ul>
+    <!-- Scroll to Top Button -->
+    <button onclick="topFunction()" id="scroll-button" title="Scroll to Top">
+       <i class="fa-solid fa-angles-up fa-2x"></i>
+    </button>
+    <header>
+       <div class="content-wrapper">
+          <nav class="full-screen-nav">
+             <div class="backdrop"></div>
+             <ul>
+                <li><a href="#home" onclick="closeNav()"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="#about" onclick="closeNav()"><i class="fa-solid fa-user"></i> About</a></li>
+                <li><a href="#skills" onclick="closeNav()"><i class="fa-solid fa-code-branch"></i> Skills</a></li>
+                <li><a href="#work" onclick="closeNav()"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+                <li><a href="#connect" onclick="closeNav()"><i class="fa-solid fa-at"></i> Connect</a></li>
+             </ul>
           </nav>
 
-          <h1>Hi, I'm not sure what I'm saying yet, so here's sample text.</h1>
+          <div class="menu-content">
+             <button class="toggle" aria-label="navigation menu">
+                <i class="fa-solid fa-bars"></i>
+             </button>
+          </div>
 
+          <div class="home-title">
+             <div class="i-photo">
+                <figure>
+                   <img src="img/d-con.jpg" alt="D icon" id="profile-image">
+                </figure>
+             </div>
 
-      </div>
+             <div class="home-name" id="home">
+                <h1>Thad Rankin</h1>
+                <i class="fa-solid fa-code fa-2x"></i>
+                <h2>Front End Web Developer</h2>
+                <div class="i-title">
+                   <div class="i-title-wrapper">
+                      <div class="i-title-item">Coder</div>
+                      <div class="i-title-item">Writer</div>
+                      <div class="i-title-item">List Item</div>
+                      <div class="i-title-item">List Item</div>
+                      <div class="i-title-item">Coffee Lover</div>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="header-icons">
+             <a href="https://www.linkedin.com/in/thad-rankin-1597408/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+             <a href="https://github.com/thad-rankin" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-4x"></i></a>
+          </div>
+       </div>
+    </header>
 
-  </header>
-
-  <main>
-      <section id="about">
+    <main>
+       <section id="about">
           <div class="content-wrapper">
-
-              <h2>A little bit about me.</h2>
-
-              <p>My tech journey started with a degree in journalism. I loved researching,
-                  writing, and sharing my voice online, but something felt missing. I wished
-                  for a way to share and display information exactly the way I wanted. That's
-                  when I discovered and fell in love with coding and web design!</p>
-
-              <p> As a front end developer, I pride myself on writing code that's easy to read
-                  and build upon while still looking great. My goal with every site is to provide
-                  a top-of-the-line user experience. Besides web development, I enjoy
-                  gardening and spending time with my small (but growing!) family.</p>
-
+             <h3>About Me</h3>
+             <div class="half-content">
+                <figure>
+                   <img src="img/dd-portrait-1.jpg" alt="photo of Dani Darling" id="about-photo">
+                </figure>
+                <p class="about-text">
+                   Hi there, I’m <span>Dani Darling</span>.<br>
+                   <br>
+                   I’m a <span>Front End Web Developer</span> specializing in accessible and engaging interactive websites. 
+                   Learning languages has always been a passion of mine.  
+                   Once I realized that coding languages created advanced opportunities to communicate, innovate, and collaborate, I was all in. 
+                   With a background in film and theater production, I enjoy the deep satisfaction of involvement in creative and collaborative experiences, 
+                   and would love to bring my enthusiasm to your organization!<br>
+                   <br>
+                   When I’m not coding, you can find me reading a speculative fiction novel, singing Broadway tunes, hiking in the woods, or all three at once.
+                </p>
+             </div>
           </div>
+       </section>
 
-      </section>
-
-      <section id="skills">
+       <section id="skills">
           <div class="content-wrapper">
-
-              <h2>Developer Skills</h2>
-
-              <div class="skill-list">
-                  <img src="img/html-icon.png" alt="html icon">
-
-                  <h3>HTML & CSS</h3>
-
-                  <p>I pride myself on my organized and well-formatted HTML and CSS. All my
-                      code is tested to ensure it's valid, accessible for all users, and works great
-                      on the major browsers.</p>
-              </div>
-
-              <div class="skill-list">
-                  <img src="img/pencil-icon.png" alt="pencil">
-
-                  <h3>Design to Code</h3>
-
-                  <p>If you have a design, I can turn it into a website! I'll use the exact colors,
-                      fonts, and imagery you need. You provide the design comp, and I'll code up
-                      a site just for you.</p>
-              </div>
-
-              <div class="skill-list">
-                  <img src="img/git-icon.png" alt="git icon">
-
-                  <h3>Git & GitHub</h3>
-
-                  <p>I never work on a project without my best friends Git and GitHub! I can
-                      collaborate with your team on any codebase and adjust to your team's
-                      version control workflow.</p>
-              </div>
-
+             <h3>Skills</h3>
+             <div class="language-wrapper">
+                <ul> <!-- Icons -->
+                   <li><i class="fa-brands fa-html5 fa-4x" title="HTML5"></i></li>
+                   <li><i class="fa-brands fa-css3-alt fa-4x" title="CSS3"></i></li>
+                   <li><i class="fa-brands fa-js-square fa-4x" title="JavaScript"></i></li>
+                   <li><i class="fa-brands fa-react fa-4x" title="React"></i></li>
+                   <li><i class="fa-brands fa-git-alt fa-4x" title="Git"></i></li>
+                   <li><i class="fa-brands fa-angular fa-4x" title="Angular"></i></li>
+                </ul>
+             </div>
+             <div class="tool-wrapper">
+                <h5>
+                   Photoshop | 
+                   Chrome DevTools | 
+                   CodeSandbox | 
+                   Responsive Design | 
+                   FTP Client | 
+                   Web Hosting | 
+                   Visual Studio Code
+                </h5>
+             </div>
           </div>
+       </section>
 
-      </section>
+       <section class="portfolio" id="work">
+          <div class="content-wrapper">
+             <h3>Projects</h3>
+             <div class="portfolio-wrapper">
+                <div class="portfolio-piece">
+                   <figure>
+                      <a href="https://3h0hn.csb.app/" target="_blank">
+                         <img src="img/sticky-notes-app.jpg" alt="sticky note app" />
+                      </a>
+                   </figure>
+                   <h4>Sticky Note App</h4>
+                   <p class="project-description">
+                      An interactive React app that lets users create 
+                      “sticky notes” plus edit, delete, and search their to-do list items.
 
-  </main>
+                   </p>
+                   <p class="project-description">
+                      <span>Skills: </span>
+                      React, JSX, ES6, Data Flow, DOM Manipulation, Local Storage
+                   </p>
+                </div>
+                <div class="portfolio-piece">
+                   <figure>
+                      <a href="https://ddarlin1.github.io/gems-quiz/" target="_blank">
+                         <img src="img/gem-quiz.jpg" alt="gem quiz" />
+                      </a>
+                   </figure>
+                   <h4>Gem Quiz</h4>
+                   <p class="project-description">
+                      An original project that displays a random gem, or 
+                      specific gem based on user-selected criteria, to promote healing.
 
-  <footer id="contact">
-      <div class="content-wrapper">
-
-          <div class="contact-image">
-              <img src="img/jess-bailey-q10VITrVYUM-unsplash.jpg" alt="desktop with keyboard and glasses"
-                  id="contact-img">
+                   </p>
+                   <p class="project-description">
+                      <span>Skills: </span>
+                      JavaScript, Flexbox, Clone Node, Data Flow, For Loops, CSS Animation
+                   </p>
+                </div>
+                <div class="portfolio-piece">
+                   <figure>
+                      <a href="https://ddarlin1.github.io/github-repo-gallery/" target="_blank">
+                         <img src="img/github-repo-gallery.jpg" alt="github repo gallery" />
+                      </a>
+                   </figure>
+                   <h4>GitHub Repo Gallery</h4>
+                   <p class="project-description">
+                      A customized responsive gallery of my repositories using GitHub's API to pull data from my
+                      GitHub profile. Click on any repo for more details.
+                   </p>
+                   <p class="project-description">
+                      <span>Skills: </span>
+                      JavaScript, APIs, Loops, DOM Manipulation, CSS Animation
+                   </p>
+                </div>
+                <div class="portfolio-piece">
+                   <figure>
+                      <a href="https://ddarlin1.github.io/guess-the-word/" target="_blank">
+                         <img src="img/guess-the-word.jpg" alt="guess the word" />
+                      </a>
+                   </figure>
+                   <h4>Guess the Word Game</h4>
+                   <p class="project-description">
+                      An interactive JavaScript game where players guess one letter at a
+                      time. Guess all the letters correctly in eight attempts, you win!
+                   </p>
+                   <p class="project-description">
+                      <span>Skills: </span>
+                      JavaScript, Responsive Design, DOM Manipulation, Loops
+                   </p>
+                </div>
+                <div class="portfolio-piece">
+                   <figure>
+                      <a href="https://ddarlin1.github.io/unplugged-project/" target="_blank">
+                         <img src="img/unplugged.jpg" alt="unplugged project" />
+                      </a>
+                   </figure>
+                   <h4>Unplugged</h4>
+                   <p class="project-description">
+                      A 3-page responsive website built from a Photoshop design comp that adapts to mobile,
+                      tablet, and desktop screens.
+                   </p>
+                   <p class="project-description">
+                      <span>Skills: </span>
+                      Flexbox, Responsive Typography, Photoshop, Media Queries
+                   </p>
+                </div>
+             </div>
           </div>
+       </section>
+    </main>
 
-          <div class="contact-info">
-              <h2>Like What You See?</h2>
-              <h3 id="email-header">Let's meet for a cup of coffee.</h3>
-              <img src="img/envelope.png" alt="email icon" id="email-icon"><a
-                  href="mailto:hi@JubileeAusten.com">hi@JubileeAusten.com</a>
-              <h3 id="socialmedia-header">Or, follow me on social media.</h3>
-              <ul>
-                  <li><a href="https://www.twitter.com/" target="_blank"><img src="img/twitter.png"
-                              alt="twitter icon"></a></li>
-                  <li><a href="https://www.facebook.com" target="_blank"><img src="img/facebook.png"
-                              alt="facebook icon"></a></li>
-                  <li><a href="https://www.instagram.com/" target="_blank"><img src="img/instagram.png"
-                              alt="instagram icon"></a></li>
-                  <li><a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin.png"
-                              alt="linkedin icon"></a></li>
-                  <li><a href="https://www.github.com/" target="_blank"><img src="img/github.png"
-                              alt="github icon"></a></li>
-              </ul>
-
+    <footer id="connect">
+       <div class="content-wrapper">
+          <h3>Let's Connect</h3>
+          <div class="contact-wrapper">
+             <div class="contact-info">
+                <a href="https://www.linkedin.com/in/danidarling/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin fa-5x"></i></a>
+                <a href="https://github.com/ddarlin1/" target="_blank" title="GitHub"><i class="fa-brands fa-github fa-5x"></i></a>
+             </div>
+             <div class="contact-form">
+                <h4 class="contact-me">Contact Dani</h4>
+                <div id="contact-form">
+                   <form action="https://formspree.io/f/xbjwozkz" method="POST">
+                      <input 
+                         type="text" 
+                         name="name" 
+                         aria-label="write your full name"
+                         id="full-name" 
+                         placeholder="First & Last Name" 
+                         required 
+                      />
+                      <input 
+                         type="text"
+                         name="replyto"
+                         aria-label="your email address"
+                         id="email-address"
+                         placeholder="your_email@email.com"
+                         required
+                      />
+                      <textarea
+                         name="message"
+                         aria-label="your message"
+                         id="message"
+                         placeholder="Message"
+                         required
+                      ></textarea>
+                      <button class="btn" type="submit">SEND</button>
+                   </form>
+                </div>
+             </div>
           </div>
-
-      </div>
-
-  </footer>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+          <p class="copyright">Copyright 2022 | Dani Darling</p>
+       </div>
+    </footer>
+ </body>
 
 </html>
