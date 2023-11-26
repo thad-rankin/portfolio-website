@@ -407,10 +407,15 @@ header h2 {
   color: #152a3e
 }
 
+#about h2 {
+  width: 100%;
+  text-align: left;
+  color: #152a3e
+}
+
 #profile-image {
   width: 90%;
   filter: drop-shadow(1px 2px 6px #152A3e);
-  }
 }
 
 #about h3,
